@@ -2,6 +2,15 @@ import asyncio
 import pygame
 # Try to declare all your globals at once to facilitate compilation later.
 COUNT_DOWN = 3
+SCROLL_THRESH = 200
+GRAVITY = 1
+MAX_PLATFORMS = 10
+scroll = 0
+bg_scroll = 0
+game_over = False
+score = 0
+fade_counter = 0
+
 
 # Do init here
 # Load any assets right now to avoid lag at runtimepygame.mixer.music.load('assets/assets_boss.mp3')
